@@ -120,6 +120,7 @@ form textarea {
 input, select, textarea {
 	display: block;
 	width: 100%;
+	font-size: clamp(16px, 1vw, 48px);
 	padding: 4px 8px 4px 8px;
 }
 
