@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+/* 	font-size: calc(minPX + (max - min) * ((100vw - 280px) / (1920 - 280))); */
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+html {
+	background-color: rgb(255, 250, 230);
+}
+
+
+body {
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+	background-size: cover;
+	filter: brightness(110%);
+}
+
+
+/*
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: black;
+}
+*/
+
+
+main {
+	position: relative;
+	margin: 0 auto;
+	min-height: 800px;
+	z-index: 2;
+}
+
+
+
+#page-wedding section.hero {
+	margin: 0px auto;
+	max-width: 1600px;
+	padding: 0px 32px;
+	margin-top: 32px;
+	text-align: center;	
+}
+
+#page-wedding section.rsvp {
+	margin: 0px auto;
+	max-width: 800px;
+	padding: 0px 32px;
+	margin-top: 32px;
+	margin-bottom: 64px;
+}
+
+
+
+
+
+
+
+#page-wedding h1 {
+	font-family: 'Prata', serif;
+	font-size: 4vw;
+	line-height: 5vw;
+	font-weight: 100;
+	font-style: normal;
+	color: #5271FF;
+	letter-spacing: 6px;
+}
+
+#page-wedding p.description {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5vw;
+	line-height: 2.2vw;
+	font-weight: normal;
+	font-style: normal;
+	color: #800080;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+	font-family: 'Lato', sans-serif;
+}
+
+form li {
+	margin-bottom: 32px;
+}
+
+form textarea {
+	height: 200px;
+	padding: 16px 18px;
+	outline: none;
+	resize: none;
+	overflow: auto;
+	border-radius: 4px;
+}
+
+
+input, select, textarea {
+	display: block;
+	width: 100%;
+}
+
+label {
+	display: block;
+}
+
+.field {
+	width: calc(50% - 16px);
+}
+
+
+#submit {
+	font-family: 'Courgette', serif;
+	background-color: #5271FF;
+	color: white;
+	font-size: 1.3vw;
+	font-weight: normal;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+	padding: 7px 0 3px 0;
+	width: 260px;
+}
+
+
+
+
+
+
+
+
+
+
+.form-required {
+	color: #dc2626;
+}
+
+.form-optional {
+	font-size: 10px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+	FOOTER
+--------------------------------------------------------------*/
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#page-wedding .bg-container {
+	display: flex;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#flowers-left-corner {
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	height: 100%;
+	width: 50%;
+}
+
+#flowers-right-corner {
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+	height: 100%;
+	width: 50%;
+}
+
+#img-blue-flowers-corner {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	max-width: 420px;
+	width: 100%;
+
+	-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+}
+
+#img-purple-flowers-corner {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	max-width: 420px;
+	width: 100%;
+
+	-moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+
+#img-purple-flower {
+	position: absolute;
+	bottom: 150px;
+	left: 158px;
+	max-width: 170px;
+	width: 100%;
+}
+
+#img-blue-flower {
+	position: absolute;
+	bottom: 150px;
+	right: 158px;
+	max-width: 170px;
+	width: 100%;
+	
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+	transform: scaleX(-1);	
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+	800px
+--------------------------------------------------------------*/
+@media (max-width: 799px) { /* smaller than phone size 800px */
+
+
+
+}
+
+/*--------------------------------------------------------------
+	600px
+--------------------------------------------------------------*/
+@media (max-width: 599px) { /* smaller than phone size 600px */
+
+
+
+
+}
+
+
+/*--------------------------------------------------------------
+	340px
+--------------------------------------------------------------*/
+@media (max-width: 339px) { /* smaller than phone size 340px */
+
+
+
+
+}
