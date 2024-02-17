@@ -11,10 +11,146 @@
 	
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/default.css">
+	<link rel="stylesheet" href="./css/main.css">
 	
 	
 </head>
-<body>
+<body id="page-wedding">
+<main>
 
+	<section class="hero">
+	
+		<h1>TIM AND AMANDA<br>ARE TYING THE KNOT!</h1>
+			
+		<p class="description">Please RSVP for the Wedding<br>
+			April 20th, 2024, Saturday, 1:00 p.m.<br>
+			Carbondale Church of Christ
+		</p>
+		
+	</section>
+	
+	<section class="rsvp">
+	
+		<form autocomplete="on">
+		<!--<form action="https://formsubmit.co/your@email.com" method="POST" /> -->
+			<li>
+				<label>
+					<span class="title">Name</span>
+					<span class="form-required">*</span>
+				</label>
+				
+				<div class="flex">
+				
+					<div class="field">
+						<input type="text" name="first-name" required>
+						<label>First</label>
+					</div>
+					
+					<div class="field">
+						<input type="text" name="last-name" required>
+						<label>Last</label>
+					</div>
+					
+				</div>
+			</li>
+			
+			<li>
+				<div class="flex">
+				
+					<div class="field">
+						<label>
+							<span class="title">Email</span>
+							<span class="form-optional">(optional)</span>
+						</label>
+						<input type="email" name="email">
+					</div>
+					
+					<div class="field">
+						<label>
+							<span class="title">Phone</span>
+							<span class="form-optional">(optional)</span>
+						</label>
+						<input type="tel" name="phone">
+					</div>
+					
+				</div>
+			</li>
+			
+			<li>
+				<label>
+					<span class="title">Number of Guests</span>
+					<span class="form-required">*</span>
+				</label>
+				
+				<div class="flex">
+				
+					<div class="field">
+						<select name="adults">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5 or more">5 or more</option>
+						</select>
+						<label>Adults</label>
+					</div>
+					
+					<div class="field">
+						<select name="children">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5 or more">5 or more</option>
+						</select>
+						<label>Children</label>
+					</div>
+					
+				</div>
+			</li>
+			
+			<li>
+				<label>
+					<span class="title">Comments/Questions</span>
+					<span class="form-optional">(optional)</span>
+				</label>
+				<textarea name="comments" maxlength="3000"></textarea>
+			</li>
+			
+			<li style="text-align: center;">
+				<input id="submit" type="submit" value="Count me in!">
+			</li>
+		</form>
+		
+	</section>
+	
+	
+</main>
 
+<footer>
+	<div class="bg-container">
+		<div id="flowers-left-corner">
+			<div id="img-blue-flowers-corner">
+				<img src="img/blue-flowers-corner.png">
+			</div>		
+			
+			<div id="img-purple-flower">
+				<img src="img/purple-flower.svg">
+			</div>
+		</div>
+	
+		<div id="flowers-right-corner">	
+			<div id="img-purple-flowers-corner">
+				<img src="img/purple-flowers-corner.png">
+			</div>
+		
+			<div id="img-blue-flower">
+				<img src="img/blue-flower.svg">
+			</div>
+		</div>
+	</div>
+
+</footer>
 </body>
