@@ -32,7 +32,9 @@ body {
 	overflow-x: hidden;
 }
 
-
+main {
+	height: 100dhv;
+}
 
 a, button { text-decoration: none; } /* Remove underline */
 
