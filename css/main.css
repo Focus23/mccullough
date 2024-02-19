@@ -60,24 +60,57 @@ main {
 #page-wedding .img-intro {
 	width: 100vw;
 	z-index: 20;
-	opacity: 0.65;
+	opacity: 0.5;
 	filter: sepia(0.7);
 }
 
 #page-wedding .img-intro-large { display: block; }
 #page-wedding .img-intro-small { display: none; }
 
-#page-wedding .title-intro {
+#page-wedding .title-intro-top {
 	position: absolute;
-	top: 76%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 8%;
 	max-width: clamp(16px, 100vw, 3200px);
 	padding: 0px 32px;
 	width: 100%;
 	text-align: center;
 	z-index: 30;
 }
+
+#page-wedding .title-intro-bottom {
+	position: absolute;
+	bottom: 10%;
+	max-width: clamp(16px, 100vw, 3200px);
+	padding: 0px 32px;
+	width: 100%;
+	text-align: center;
+	z-index: 30;
+}
+
+#page-wedding h1 {
+	font-family: 'elora', serif;
+	font-size: clamp(36px, 5vw, 300px);
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(110,140,255);
+	letter-spacing: 6px;
+	width: 100%;
+}
+
+#page-wedding .title-intro-top h1 {
+	
+}
+
+#page-wedding .title-intro-bottom h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(24px, 3vw, 300px);
+	font-weight: normal;
+	color: rgb(110,140,255);
+	padding-top: 4%;
+}
+
+
+
 
 #page-wedding section.description {
 	position: relative;
@@ -87,6 +120,52 @@ main {
 	z-index: 30;
 }
 
+#page-wedding .description h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(16px, 1.7vw, 64px);
+	line-height: clamp(20px, 2vw, 70px);
+	color: #800080;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+#page-wedding .description h3 {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(16px, 1.3vw, 64px);
+	line-height: clamp(20px, 2vw, 70px);
+	color: #800080;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+#page-wedding .description .location img {
+	position: absolute;
+	display: inline;
+	width: 26px;
+	margin-top: 4px;
+	margin-left: -32px;
+}
+
+
+
+#page-wedding .description p {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(16px, 1.5vw, 64px);
+	line-height: clamp(20px, 2vw, 70px);
+	color: #800080;
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+#page-wedding .description .map {
+	margin: 0 auto;
+	border: 2px solid #800080;
+	border-radius: 4px;
+}
+
+
 #page-wedding section.rsvp {
 	position: relative;
 	margin: 0px auto;
@@ -95,34 +174,13 @@ main {
 	z-index: 30;
 }
 
-
-
-
-
-#page-wedding h1 {
-	font-family: 'elora', serif;
-	font-size: clamp(36px, 5vw, 300px);
-	font-weight: 100;
-	font-style: normal;
-	color: rgb(110,140,255);
-	letter-spacing: 6px;
-}
-
-#page-wedding .description p {
+#page-wedding section.rsvp p {
 	font-family: 'Inter', sans-serif;
-	font-size: clamp(16px, 1.5vw, 64px);
-	line-height: clamp(20px, 1.7vw, 70px);
-	color: #800080;
-	text-transform: uppercase;
-	text-align: center;
+	font-size: clamp(16px, 1.1vw, 64px);
+	color: #5271FF;
+	font-weight: bold;
+	padding-bottom: 32px;
 }
-
-
-
-
-
-
-
 
 form {
 	font-family: 'Inter', sans-serif;
