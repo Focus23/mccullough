@@ -30,11 +30,6 @@ html {
 body {
 	height: 100dvh;
 	min-height: 100dvh;
-	overflow-x: hidden;
-}
-
-main {
-	height: 100dhv;
 }
 
 a, button { text-decoration: none; } /* Remove underline */
