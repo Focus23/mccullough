@@ -28,8 +28,7 @@ html {
 }
 
 body {
-	height: 100dvh;
-	min-height: 100dvh;
+	
 }
 
 a, button { text-decoration: none; } /* Remove underline */
