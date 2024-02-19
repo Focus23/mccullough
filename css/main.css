@@ -34,7 +34,9 @@ html, body {
 }
 
 html {
-	background-color: white;
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+	background-size: cover;
+	filter: brightness(110%);
 }
 
 
@@ -46,9 +48,6 @@ body {
 
 main {
 	position: relative;
-	background: url('../img/bg.jpg') no-repeat center center fixed;
-	background-size: cover;
-	filter: brightness(110%);
 	z-index: 0;
 }
 
