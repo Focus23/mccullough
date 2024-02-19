@@ -23,7 +23,8 @@ body, div, span, p, h1, h2, h3, h4, h5, h6, table, tr, th, td, hr, ol, ul, li { 
 hr { border: 0; }
 
 html { 
-	height: 100dvh; 
+	height: 100dvh;
+	min-height: -webkit-fill-available;
 	overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
