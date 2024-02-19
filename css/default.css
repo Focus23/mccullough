@@ -27,8 +27,8 @@ html {
 	overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
-body, main { 
-	min-height: 100dvh;
+body, main {
+	height: 100dvh;
 	overflow: hidden;
 }
 
