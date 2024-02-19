@@ -24,7 +24,6 @@ hr { border: 0; }
 
 html { 
 	height: 100dvh;
-	min-height: -webkit-fill-available;
 	overflow-x: hidden; /* Disable horizontal scrolling */
 }
 

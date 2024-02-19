@@ -34,14 +34,14 @@ html, body {
 }
 
 html {
-	background: url('../img/bg.jpg') no-repeat center center fixed;
-	background-size: cover;
-	filter: brightness(110%);
+	background-color: black;
 }
 
 
 body {
-	
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+	background-size: cover;
+	filter: brightness(110%);	
 }
 
 
