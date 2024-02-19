@@ -20,114 +20,111 @@
 
 	<section class="hero">
 	
-		<h1>TIM AND AMANDA<br>ARE TYING THE KNOT!</h1>
-			
-		<p class="description">Please RSVP for the Wedding<br>
-			April 20th, 2024, Saturday, 1:00 p.m.<br>
-			Carbondale Church of Christ
-		</p>
+		<div class="img-intro">
+			<img class="img-intro-large" src="img/img-intro-large.jpg">
+			<img class="img-intro-small" src="img/img-intro-small.jpg">
+		</div>
+	
+		<div class="title-intro">
+			<h1>Tim & Amanda</h1>
+			<h1>Are Tying The Knot!</h1>
+		</div>
 		
+	</section>
+
+	<section class="description">
+		<p>
+			Saturday<br>
+			April 20th, 2024<br>
+			
+			1:00 PM<br>
+			Carbondale Church of Christ<br>
+			Please RSVP for the Wedding
+		</p>
 	</section>
 	
 	<section class="rsvp">
 	
-		<form action="https://formsubmit.co/018afd22b3037bafd3b854858250bf13" method="POST">
-			<li>
-				<label>
-					<span class="title">Name</span>
-					<span class="form-required">*</span>
-				</label>
+		<form action="https://formsubmit.co/018afd22b3037bafd3b854858250bf13" method="POST" autocomplete="on">
+			<div class="flex">
+				<li>
+					<label>
+						<span class="title">First Name</span>
+						<span class="form-required">*</span>
+					</label>
+					<input type="text" name="first-name" placeholder="First Name" required>
+				</li>
+						
+				<li>
+					<label>
+						<span class="title">Last Name</span>
+						<span class="form-required">*</span>
+					</label>
+					<input type="text" name="last-name" placeholder="Last Name" required>
+				</li>
 				
-				<div class="flex">
+				<li>
+					<label>
+						<span class="title">Number of Adults</span>
+						<span class="form-required">*</span>
+					</label>
+					<select name="adults">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5 or more">5 or more</option>
+					</select>
+				</li>
+					
+				<li>
+					<label>
+						<span class="title">Number of Children</span>
+						<span class="form-required">*</span>
+					</label>
+					<select name="children">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5 or more">5 or more</option>
+					</select>
+				</li>			
 				
-					<div class="field">
-						<input type="text" name="first-name" required>
-						<label class="sub-label">First</label>
-					</div>
+				<li>
+					<label>
+						<span class="title">Email</span>
+						<span class="form-optional">(optional)</span>
+					</label>
+					<input type="email" name="email" placeholder="Email">
+				</li>
 					
-					<div class="field">
-						<input type="text" name="last-name" required>
-						<label class="sub-label">Last</label>
-					</div>
-					
-				</div>
-			</li>
+				<li>
+					<label>
+						<span class="title">Phone</span>
+						<span class="form-optional">(optional)</span>
+					</label>
+					<input type="tel" name="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				</li>
+			</div>
 			
-			<li>
-				<div class="flex">
-				
-					<div class="field">
-						<label>
-							<span class="title">Email</span>
-							<span class="form-optional">(optional)</span>
-						</label>
-						<input type="email" name="email">
-					</div>
-					
-					<div class="field">
-						<label>
-							<span class="title">Phone</span>
-							<span class="form-optional">(optional)</span>
-						</label>
-						<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-					</div>
-					
-				</div>
-			</li>
-			
-			<li>
+			<div>
 				<label>
-					<span class="title">Number of Guests</span>
-					<span class="form-required">*</span>
-				</label>
-				
-				<div class="flex">
-				
-					<div class="field">
-						<select name="adults">
-							<option value=""></option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5 or more">5 or more</option>
-						</select>
-						<label class="sub-label">Adults</label>
-					</div>
-					
-					<div class="field">
-						<select name="children">
-							<option value=""></option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5 or more">5 or more</option>
-						</select>
-						<label class="sub-label">Children</label>
-					</div>
-					
-				</div>
-			</li>
-			
-			<li>
-				<label>
-					<span class="title">Comments/Questions</span>
+					<span class="title">Any Comments or Questions?</span>
 					<span class="form-optional">(optional)</span>
 				</label>
 				<textarea name="comments" maxlength="420"></textarea>
-			</li>
+			</div>
 			
-			<li style="text-align: center;">
+			<div class="btn-submit">
 				<input id="submit" type="submit" value="Count me in!">
-			</li>
+			</div>
 		</form>
 		
 	</section>
-	
-	
-</main>
 
+	
 <footer>
 	<div class="bg-container">
 		<div id="flowers-left-corner">
@@ -150,6 +147,6 @@
 			</div>
 		</div>
 	</div>
-
 </footer>
+</main>
 </body>
