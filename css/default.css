@@ -27,10 +27,12 @@ html {
 	overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
-body, main {
+body {
 	height: 100dvh;
-	overflow: hidden;
+	overflow-x: hidden;
 }
+
+
 
 a, button { text-decoration: none; } /* Remove underline */
 
