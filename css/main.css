@@ -155,8 +155,8 @@ main {
 
 #page-wedding .description h2 {
 	font-family: 'Inter', sans-serif;
-	font-size: clamp(16px, 1.6vw, 64px);
-	line-height: clamp(20px, 2vw, 70px);
+	font-size: clamp(24px, 1.6vw, 64px);
+	line-height: clamp(24px, 2vw, 70px);
 	color: #800080;
 	font-weight: normal;
 	text-align: center;
@@ -165,7 +165,7 @@ main {
 
 #page-wedding .description h3 {
 	font-family: 'Inter', sans-serif;
-	font-size: clamp(16px, 1.1vw, 64px);
+	font-size: clamp(20px, 1.1vw, 64px);
 	line-height: clamp(20px, 2vw, 70px);
 	color: #800080;
 	font-weight: normal;
@@ -175,17 +175,17 @@ main {
 #page-wedding .description .location img {
 	position: absolute;
 	display: inline;
-	width: 26px;
-	margin-top: 4px;
-	margin-left: -32px;
+	width: clamp(24px, 1.3vw, 64px);
+	margin-top: 7px;
+	margin-left: -30px;
 }
 
 
 
 #page-wedding .description .location {
 	font-family: 'Inter', sans-serif;
-	font-size: clamp(16px, 1.5vw, 64px);
-	line-height: clamp(20px, 2.2vw, 70px);
+	font-size: clamp(24px, 1.5vw, 64px);
+	line-height: clamp(28px, 2.2vw, 70px);
 	color: #800080;
 	text-align: center;
 	padding-bottom: 32px;
@@ -208,10 +208,9 @@ main {
 
 #page-wedding #rsvp h2 {
 	font-family: 'Inter', sans-serif;
-	font-size: clamp(16px, 2vw, 64px);
+	font-size: clamp(24px, 2vw, 64px);
 	line-height: clamp(20px, 3vw, 70px);
 	color: #800080;
-	
 	text-align: center;
 	padding-bottom: 16px;
 }
@@ -264,6 +263,13 @@ input:focus, select:focus, textarea:focus {
 select {
 	cursor: pointer;
 	padding: 0.6rem 1rem 0.65rem 1rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='%23800080' height='24' viewBox='0 0 20 20' width='38' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: 100%;
+	background-position-y: 50%;
+
 }
 
 form textarea {
@@ -421,11 +427,28 @@ footer {
 
 
 
+/*--------------------------------------------------------------
+	1800px
+--------------------------------------------------------------*/
+@media (max-width: 1800px) { /* smaller than phone size 1801px */
+
+#page-wedding .description .location img {
+	margin-top: 5px;
+}
+
+}
 
 /*--------------------------------------------------------------
 	1600px
 --------------------------------------------------------------*/
 @media (max-width: 1600px) { /* smaller than phone size 1601px */
+
+
+#page-wedding .description .location img {
+	margin-top: 2px;
+}
+
+
 
 #img-blue-flowers-corner,
 #img-purple-flowers-corner {
@@ -451,6 +474,12 @@ footer {
 	1400px
 --------------------------------------------------------------*/
 @media (max-width: 1400px) { /* smaller than phone size 1401px */
+
+
+#page-wedding .description .location img {
+	margin-top: 0;
+}
+
 
 #img-blue-flowers-corner,
 #img-purple-flowers-corner {
@@ -503,6 +532,11 @@ form li {
 #page-wedding .img-intro-small { display: block; }
 
 #page-wedding .title-intro { padding: 0px 8px; }
+
+#page-wedding .description .location img {
+
+	margin-left: -24px;
+}
 
 
 }
