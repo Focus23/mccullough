@@ -101,6 +101,20 @@ main {
 	z-index: 30;
 }
 
+#page-wedding .hero span {
+	position: relative;
+	top: 32px;
+	font-family: 'Inter', sans-serif;
+	font-variant-numeric: tabular-nums;
+	font-size: clamp(24px, 1.7vw, 300px);
+	font-weight: normal;
+	color: white;
+}
+
+#page-wedding #time-left {
+	padding-left: 32px;
+}
+
 #page-wedding h1 {
 	font-family: 'elora', serif;
 	font-size: clamp(36px, 5vw, 300px);
@@ -130,28 +144,32 @@ main {
 	position: relative;
 	margin: 0px auto;
 	max-width: 900px;
-	padding: 32px 32px 32px 32px;
+	padding: 32px 32px 64px 32px;
 	z-index: 30;
+}
+
+#page-wedding .description li {
+	width: calc(50% - 32px);
+	padding-bottom: 32px;
 }
 
 #page-wedding .description h2 {
 	font-family: 'Inter', sans-serif;
-	font-size: clamp(16px, 1.7vw, 64px);
+	font-size: clamp(16px, 1.6vw, 64px);
 	line-height: clamp(20px, 2vw, 70px);
 	color: #800080;
 	font-weight: normal;
 	text-align: center;
-	padding-bottom: 32px;
+	padding-bottom: 16px;
 }
 
 #page-wedding .description h3 {
 	font-family: 'Inter', sans-serif;
-	font-size: clamp(16px, 1.3vw, 64px);
+	font-size: clamp(16px, 1.1vw, 64px);
 	line-height: clamp(20px, 2vw, 70px);
 	color: #800080;
 	font-weight: normal;
 	text-align: center;
-	padding-bottom: 32px;
 }
 
 #page-wedding .description .location img {
@@ -164,10 +182,10 @@ main {
 
 
 
-#page-wedding .description p {
+#page-wedding .description .location {
 	font-family: 'Inter', sans-serif;
 	font-size: clamp(16px, 1.5vw, 64px);
-	line-height: clamp(20px, 2vw, 70px);
+	line-height: clamp(20px, 2.2vw, 70px);
 	color: #800080;
 	text-align: center;
 	padding-bottom: 32px;
@@ -180,7 +198,7 @@ main {
 }
 
 
-#page-wedding section.rsvp {
+#page-wedding #rsvp {
 	position: relative;
 	margin: 0px auto;
 	max-width: 900px;
@@ -188,12 +206,30 @@ main {
 	z-index: 30;
 }
 
-#page-wedding section.rsvp p {
+#page-wedding #rsvp h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(16px, 2vw, 64px);
+	line-height: clamp(20px, 3vw, 70px);
+	color: #800080;
+	
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+#page-wedding #rsvp p {
 	font-family: 'Inter', sans-serif;
 	font-size: clamp(16px, 1.1vw, 64px);
+	line-height: clamp(20px, 1.8vw, 70px);
 	color: #5271FF;
 	font-weight: bold;
 	padding-bottom: 32px;
+}
+
+#page-wedding #rsvp .thanks {
+	font-size: clamp(16px, 1.5vw, 64px);
+	line-height: clamp(20px, 2.5vw, 70px);
+	padding-top: 112px;
+	text-align: center;
 }
 
 form {
@@ -211,18 +247,23 @@ input, select, textarea {
 	display: block;
 	border: 1px solid #800080;
     border-radius: 4px;
-	font-size: clamp(16px, 1vw, 48px);
+	font-size: clamp(14px, 1vw, 48px);
+	line-height: clamp(15px, 1vw, 48px);
+	height: clamp(48px, 1vw, 128px);
 	font-weight: bold;
     padding: 0.65rem 1rem;
 	background-color: rgba(255,255,255,0.3);
     color: #800080;
     width: 100%;
-	
-	
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid #800080;
 }
 
 select {
 	cursor: pointer;
+	padding: 0.6rem 1rem 0.65rem 1rem;
 }
 
 form textarea {
