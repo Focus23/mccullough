@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+@font-face {
+    font-family: Elora;
+    src: url('../font/elora.otf') format('opentype');
+}
+
+::placeholder {
+	color: rgb(80,0,80);
+	opacity: 0.6; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+	color: rgb(80,0,80);
+	opacity: 0.6;
+}
+
+/* 	font-size: calc(minPX + (max - min) * ((100vw - 280px) / (1920 - 280))); */
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+html, body {
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: clamp(16px, 1vw, 48px);
+	color: rgba(0,0,0,0.87);
+	z-index: 2;
+}
+
+html {
+
+}
+
+
+body {
+
+}
+
+body::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: brightness(110%);
+	z-index: 1;
+}
+
+
+
+main {
+	position: relative;
+	z-index: 3;
+}
+
+
+#page-wedding section.hero {
+	position: relative;
+	background-color: black;
+}
+
+#page-wedding .img-intro {
+	width: 100vw;
+	z-index: 20;
+	opacity: 0.5;
+	filter: sepia(0.7);
+}
+
+#page-wedding .img-intro-large { display: block; }
+#page-wedding .img-intro-small { display: none; }
+
+#page-wedding .title-intro-top {
+	position: absolute;
+	top: 8%;
+	max-width: clamp(16px, 100vw, 3200px);
+	padding: 0px 32px;
+	width: 100%;
+	text-align: center;
+	z-index: 30;
+}
+
+#page-wedding .title-intro-bottom {
+	position: absolute;
+	bottom: 10%;
+	max-width: clamp(16px, 100vw, 3200px);
+	padding: 0px 32px;
+	width: 100%;
+	text-align: center;
+	z-index: 30;
+}
+
+#page-wedding .hero span {
+	position: relative;
+	top: 32px;
+	font-family: 'Inter', sans-serif;
+	font-variant-numeric: tabular-nums;
+	font-size: clamp(24px, 1.7vw, 300px);
+	font-weight: normal;
+	color: white;
+}
+
+#page-wedding #time-left {
+	padding-left: 32px;
+}
+
+#page-wedding h1 {
+	font-family: 'elora', serif;
+	font-size: clamp(36px, 5vw, 300px);
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(110,140,255);
+	letter-spacing: 6px;
+	width: 100%;
+}
+
+#page-wedding .title-intro-top h1 {
+	
+}
+
+#page-wedding .title-intro-bottom h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(24px, 3vw, 300px);
+	font-weight: normal;
+	color: rgb(110,140,255);
+	padding-top: 4%;
+}
+
+
+
+
+#page-wedding section.description {
+	position: relative;
+	margin: 0px auto;
+	max-width: 900px;
+	padding: 32px 32px 64px 32px;
+	z-index: 30;
+}
+
+#page-wedding .description li {
+	width: calc(50% - 32px);
+	padding-bottom: 32px;
+}
+
+#page-wedding .description h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(24px, 1.8vw, 72px);
+	line-height: clamp(24px, 2vw, 70px);
+	color: #800080;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+#page-wedding .description h3 {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(20px, 1.1vw, 64px);
+	line-height: clamp(20px, 2vw, 70px);
+	color: #800080;
+	font-weight: normal;
+	text-align: center;
+}
+
+#page-wedding .description .location img {
+	position: absolute;
+	display: inline;
+	width: clamp(24px, 1.3vw, 64px);
+	margin-top: 7px;
+	margin-left: -30px;
+}
+
+
+
+#page-wedding .description .location {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(24px, 1.5vw, 64px);
+	line-height: clamp(28px, 2.2vw, 70px);
+	color: #800080;
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+#page-wedding .description .map {
+	margin: 0 auto;
+	border: 2px solid #800080;
+	border-radius: 4px;
+}
+
+
+#page-wedding #rsvp {
+	position: relative;
+	margin: 0px auto;
+	max-width: 900px;
+	padding: 0px 32px 128px 32px;
+	z-index: 30;
+}
+
+#page-wedding #rsvp h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(24px, 2vw, 64px);
+	line-height: clamp(20px, 3vw, 70px);
+	color: #800080;
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+#page-wedding #rsvp p {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(16px, 1.1vw, 64px);
+	line-height: clamp(20px, 1.8vw, 70px);
+	color: #5271FF;
+	font-weight: bold;
+	padding-bottom: 32px;
+}
+
+#page-wedding #rsvp .thanks {
+	font-size: clamp(16px, 1.5vw, 64px);
+	line-height: clamp(20px, 2.5vw, 70px);
+	padding-top: 112px;
+	text-align: center;
+}
+
+form {
+	font-family: 'Inter', sans-serif;
+}
+
+form li {
+	width: calc(50% - 32px);
+	padding-bottom: 32px;
+}
+
+input, select, textarea {
+	/*padding: 4px 8px 4px 8px;*/
+	
+	display: block;
+	border: 1px solid #800080;
+    border-radius: 4px;
+	font-size: clamp(14px, 1vw, 48px);
+	line-height: clamp(15px, 1vw, 48px);
+	height: clamp(48px, 1vw, 128px);
+	font-weight: bold;
+    padding: 0.65rem 1rem;
+	background-color: rgba(255,255,255,0.3);
+    color: #800080;
+    width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid #800080;
+}
+
+select {
+	cursor: pointer;
+	padding: 0.6rem 1rem 0.65rem 1rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='%23800080' height='24' viewBox='0 0 20 20' width='38' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: 100%;
+	background-position-y: 50%;
+
+}
+
+form textarea {
+	min-height: 192px;
+	padding: 16px 18px;
+	outline: none;
+	resize: none;
+	overflow: auto;
+	background-color: rgba(255,255,255,0.3);
+}
+
+
+
+
+
+label {
+	display: block;
+	font-size: clamp(14px, 0.9vw, 48px);	
+	color: #5271FF;
+	padding: 0 0 6px 0;
+	font-weight: bold;
+}
+
+form .btn-submit {
+	text-align: center;
+	padding: 32px 0;
+}
+
+form .btn-submit input {
+	font-family: 'Courgette', serif;
+	background-color: #5271FF;
+	color: white;
+	font-size: clamp(20px, 1.3vw, 48px);
+	font-weight: normal;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+	text-align: center;
+	display: inline-block;
+	padding: 15px 0 12px 0;
+	width: 220px;
+	transition: 0.3s;
+}
+
+form .btn-submit input:hover {
+	background-color: #800080;
+	transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+.form-required {
+	color: #dc2626;
+}
+
+.form-optional {
+	position: relative;
+	bottom: 1px;
+	font-size: 14px;
+	opacity: 0.75;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+	FOOTER
+--------------------------------------------------------------*/
+footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#page-wedding .bg-container {
+	display: flex;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#flowers-left-corner {
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	height: 100%;
+	width: 50%;
+}
+
+#flowers-right-corner {
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+	height: 100%;
+	width: 50%;
+}
+
+#img-blue-flowers-corner {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	max-width: 420px;
+	width: 100%;
+
+	-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+}
+
+#img-purple-flowers-corner {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	max-width: 420px;
+	width: 100%;
+
+	-moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+
+#img-purple-flower {
+	position: absolute;
+	bottom: 150px;
+	left: 158px;
+	max-width: 170px;
+	width: 100%;
+}
+
+#img-blue-flower {
+	position: absolute;
+	bottom: 150px;
+	right: 158px;
+	max-width: 170px;
+	width: 100%;
+	
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+	transform: scaleX(-1);	
+}
+
+
+
+
+/*--------------------------------------------------------------
+	1800px
+--------------------------------------------------------------*/
+@media (max-width: 1800px) { /* smaller than phone size 1801px */
+
+#page-wedding .description .location img {
+	margin-top: 5px;
+}
+
+}
+
+/*--------------------------------------------------------------
+	1600px
+--------------------------------------------------------------*/
+@media (max-width: 1600px) { /* smaller than phone size 1601px */
+
+
+#page-wedding .description .location img {
+	margin-top: 2px;
+}
+
+
+
+#img-blue-flowers-corner,
+#img-purple-flowers-corner {
+	max-width: 320px;
+}
+
+
+#img-purple-flower {
+	bottom: 118px;
+	left: 122px;
+	max-width: 120px;
+}
+
+#img-blue-flower {
+	bottom: 118px;
+	right: 122px;
+	max-width: 120px;
+}
+
+
+
+/*--------------------------------------------------------------
+	1400px
+--------------------------------------------------------------*/
+@media (max-width: 1400px) { /* smaller than phone size 1401px */
+
+
+#page-wedding .description .location img {
+	margin-top: 0;
+}
+
+
+#img-blue-flowers-corner,
+#img-purple-flowers-corner {
+	max-width: 240px;
+}
+
+
+#img-purple-flower {
+	display: none;
+}
+
+#img-blue-flower {
+	display: none;
+}
+
+
+
+/*--------------------------------------------------------------
+	900px
+--------------------------------------------------------------*/
+@media (max-width: 900px) { /* smaller than phone size 901px */
+
+form li {
+	width: 100%;
+	padding-bottom: 32px;
+}
+
+
+}
+
+/*--------------------------------------------------------------
+	768px (Tablets)
+--------------------------------------------------------------*/
+@media (max-width: 768px) { /* smaller than phone size 769px */
+
+
+
+
+
+}
+
+
+/*--------------------------------------------------------------
+	480px (Mobile)
+--------------------------------------------------------------*/
+@media (max-width: 480px) { /* smaller than phone size 481px */
+
+
+#page-wedding .img-intro-large { display: none; }
+#page-wedding .img-intro-small { display: block; }
+
+#page-wedding .title-intro { padding: 0px 8px; }
+
+#page-wedding .description .location img {
+
+	margin-left: -24px;
+}
+
+
+}
+
+/*--------------------------------------------------------------
+	340px
+--------------------------------------------------------------*/
+@media (max-width: 340px) { /* smaller than phone size 341px */
+
+
+
+
+}
