@@ -155,10 +155,10 @@ main {
 
 #page-wedding .description h2 {
 	font-family: 'Inter', sans-serif;
-	font-size: clamp(24px, 1.6vw, 64px);
+	font-size: clamp(24px, 1.8vw, 72px);
 	line-height: clamp(24px, 2vw, 70px);
 	color: #800080;
-	font-weight: normal;
+	font-weight: bold;
 	text-align: center;
 	padding-bottom: 16px;
 }
