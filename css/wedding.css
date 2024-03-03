@@ -261,6 +261,46 @@ input:focus, select:focus, textarea:focus {
     outline: 1px solid #800080;
 }
 
+input[type='checkbox']:focus {
+	outline: none;
+}
+
+input[type='checkbox'] {
+	position: relative;
+	top: -8px;
+	display: inline;
+	vertical-align: middle;
+	height: 16px;
+	width: 16px;
+	accent-color: #800080;
+	border: 1px solid #800080;
+	margin: 24px 0 12px 0;
+}
+
+.potluck {
+	width: 100%;
+}
+
+#page-wedding #rsvp .potluck p {
+	padding-bottom: 0;
+}
+
+#page-wedding #rsvp .potluck p:last-child {
+	padding-bottom: 24px;
+}
+
+#page-wedding #rsvp .potluck span {
+	color: #800080;
+}
+
+#page-wedding #rsvp .recipe label {
+	color: #800080;
+}
+
+#page-wedding #rsvp #recipe {
+	margin-bottom: 32px;
+}
+
 select {
 	cursor: pointer;
 	padding: 0.6rem 1rem 0.65rem 1rem;
